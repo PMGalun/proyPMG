@@ -1,0 +1,50 @@
+preparacion de un proyecto en angular.
+
+Abro visual code, termina cdm y comando 
+
+npm install -g npm@latest
+
+npm install -g @angular/cli@latest
+
+ng new proyecto    (nombre que le vamos a poner al proyecto, en este caso es "proyecto")
+
+nos pregunta configuraciones ponemos   y
+enter en                              css
+
+una ves terminada la compilacion en la misma consola cdm debemos posicionarnos dentro del proyecto que recien creamos con el comando 
+cd, ejemplo: 
+ 
+cd proyecto
+
+una ves dentro levantamos la pagina con el comando 
+
+ng serve
+
+ahora abrimos la carpeta "proyecto" y nuevamente abrimos una consola cdm para implementar bootstrap.
+
+npm install --save bootstrap 
+
+una ves copilado abrimos el archivo angular.json para editar "styles" y "scripts"
+
+abrimos la carpeta node_module y buscamos la carpeta bootstrap, abrimos y veremos carpeta dist, abrimos y dentro estara la carpeta css y js
+en la carpeta css buscamos el archivo bootstrap.css y con boton derecho dl mouse copiamos la ruta relativa y la pegamos en angular.json en la parte de "styles debajo del
+que ya tiene seguido por una coma dentro de comillas y dando vuelta todas las barras", luego volvemos al node_module, dist, pero abrimos la carpeta js, buscamos el archivo
+bootstrap.js copiamos la ruta relativa y la pegamos en el "scrip" del angular.json dentro de comillas y dando vuelta las barras//.
+guardamos cambios con ctrl+s y nuevamente levantamos la pagina con 
+
+ng serve
+
+abrimos la carpeta src desplegamos la carpeta app y dentro estara el archivo app.component.html lo abrimos copiamos absolutamente todo el codigo, sin miedo
+y vamos a ver en el navegador que la pagina angular que levantamos queda en blanco.
+para probar bootstrap en este archivo pegamos  
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+y si todo salio bien estaran los botones de colores famosos de bootstrap! :)
